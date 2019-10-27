@@ -8,6 +8,11 @@ const navstyle = {
     backgroundColor: "#50c6db"
 };
 
+const logostyle = {
+    color: "#ffffff",
+    textAlign: 'center'
+};
+
 class App extends Component {
     render() {
         return ( <
@@ -23,10 +28,13 @@ class App extends Component {
             li > { " " } <
             Link to = { "/" }
             className = "nav-link" > { " " } <
-            h1 className = "text-center" > Epower Blog < /h1>{" "} <
-            /Link>{" "} <
-            /li>{" "} <
-            /ul>{" "} <
+            h1 className = "text-center"
+            style = { logostyle } > { " " }
+            Epower Blog { " " } <
+            /h1>{" "} < /
+            Link > { " " } <
+            /li>{" "} < /
+            ul > { " " } <
             /nav>{" "} <
             div className = "container" >
             <
@@ -39,12 +47,12 @@ class App extends Component {
             />{" "} <
             Route path = "/page/:id"
             exact component = { Post }
-            />{" "} <
-            /Switch>{" "} <
-            /div>{" "} <
-            /div>{" "} <
-            /div>{" "} <
-            /Router>
+            />{" "} < /
+            Switch > { " " } <
+            /div>{" "} < /
+            div > { " " } <
+            /div>{" "} < /
+            Router >
         );
     }
 }

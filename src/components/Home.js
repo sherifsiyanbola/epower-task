@@ -39,7 +39,9 @@ class Home extends Component {
                 const { featuredImage, postTitle, postExcerpt, slug, postId } = user;
 
                 return ( <
-                    div className = "card mb-4 shadow-lg p-3 mb-5 bg-white rounded" >
+                    div className = "col-sm-4 col-xs-12 shadow-lg p-3 mb-5 bg-white rounded" >
+                    <
+                    div className = "box-part text-center" >
                     <
                     img src = { featuredImage }
                     className = "card-img-top img-fluid"
@@ -49,11 +51,14 @@ class Home extends Component {
                     <
                     strong className = "card-title" > { " " } <
                     Link to = { `/page/${postId}` } > { " " } <
-                    p > { postTitle } < /p>{" "} < /
-                    Link > { " " } <
+                    p > { postTitle } < /p>{" "} <
+                    /Link>{" "} <
                     /strong>{" "} <
-                    small className = "card-text" > { postExcerpt } < /small>{" "} < /
-                    div > { " " } <
+                    small className = "card-text" > { " " } <
+                    p > { postExcerpt } < /p>{" "} <
+                    /small>{" "} <
+                    /div>{" "} <
+                    /div>{" "} <
                     /div>
                 );
             })

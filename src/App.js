@@ -23,12 +23,14 @@ class App extends Component {
             li > { " " } <
             Link to = { "/" }
             className = "nav-link" > { " " } <
-            h1 className = "text-center" > Epower Blog < /h1>{" "} < /
-            Link > { " " } <
-            /li>{" "} < /
-            ul > { " " } <
+            h1 className = "text-center" > Epower Blog < /h1>{" "} <
+            /Link>{" "} <
+            /li>{" "} <
+            /ul>{" "} <
             /nav>{" "} <
             div className = "container" >
+            <
+            div className = "row" >
             <
             Switch >
             <
@@ -37,10 +39,11 @@ class App extends Component {
             />{" "} <
             Route path = "/page/:id"
             exact component = { Post }
-            />{" "} < /
-            Switch > { " " } <
-            /div>{" "} < /
-            div > { " " } <
+            />{" "} <
+            /Switch>{" "} <
+            /div>{" "} <
+            /div>{" "} <
+            /div>{" "} <
             /Router>
         );
     }

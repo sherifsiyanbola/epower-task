@@ -4,6 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home";
 import Post from "./components/Post";
 
+const navstyle = {
+    backgroundColor: "#50c6db"
+};
+
 class App extends Component {
     render() {
         return ( <
@@ -11,17 +15,18 @@ class App extends Component {
             <
             div >
             <
-            nav className = "navbar navbar-expand-lg navbar-dark bg-dark" >
+            nav className = "navbar navbar-expand-lg"
+            style = { navstyle } >
             <
             ul className = "navbar-nav mr-auto" >
             <
             li > { " " } <
             Link to = { "/" }
             className = "nav-link" > { " " } <
-            h1 className = "text-center" > Epower Blog < /h1>{" "} <
-            /Link>{" "} <
-            /li>{" "} <
-            /ul>{" "} <
+            h1 className = "text-center" > Epower Blog < /h1>{" "} < /
+            Link > { " " } <
+            /li>{" "} < /
+            ul > { " " } <
             /nav>{" "} <
             div className = "container" >
             <
@@ -32,10 +37,10 @@ class App extends Component {
             />{" "} <
             Route path = "/page/:id"
             exact component = { Post }
-            />{" "} <
-            /Switch>{" "} <
-            /div>{" "} <
-            /div>{" "} <
+            />{" "} < /
+            Switch > { " " } <
+            /div>{" "} < /
+            div > { " " } <
             /Router>
         );
     }

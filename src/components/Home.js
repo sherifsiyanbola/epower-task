@@ -49,11 +49,11 @@ class Home extends Component {
                     <
                     strong className = "card-title" > { " " } <
                     Link to = { `/page/${postId}` } > { " " } <
-                    p > { postTitle } < /p>{" "} <
-                    /Link>{" "} <
+                    p > { postTitle } < /p>{" "} < /
+                    Link > { " " } <
                     /strong>{" "} <
-                    small className = "card-text" > { postExcerpt } < /small>{" "} <
-                    /div>{" "} <
+                    small className = "card-text" > { postExcerpt } < /small>{" "} < /
+                    div > { " " } <
                     /div>
                 );
             })
